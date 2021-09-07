@@ -15,7 +15,7 @@ const customeTheme = extendTheme({
     },
     colors: {
         neutralWhite: 'hsl(0, 0%, 100%)',
-        darkBluMainBg: 'hsl(218, 28%, 13%)',
+        darkBlueMainBg: 'hsl(218, 28%, 13%)',
         darkBlueIntro: 'hsl(217, 28%, 15%)',
         darkBlueFooter: 'hsl(216, 53%, 9%)',
         darkBlueTestimony: 'hsl(219, 30%, 18%)',
@@ -26,6 +26,13 @@ const customeTheme = extendTheme({
     fonts: {
         heading: 'Open Sans',
         body: 'Raleway',
+    },
+    components: {
+        Container: {
+            baseStyle: {
+                maxW: '50ch',
+            },
+        },
     },
 });
 

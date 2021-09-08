@@ -9,7 +9,7 @@ export default function LearnMore() {
                     src='/images/illustration-stay-productive.png'
                     alt='illustration of people collaborating'
                     w='80vw'
-                    maxW='60ch'
+                    maxW='50ch'
                     mx='auto'
                 />
                 <Heading

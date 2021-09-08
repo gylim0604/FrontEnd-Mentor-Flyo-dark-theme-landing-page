@@ -1,11 +1,12 @@
 import { Link } from '@chakra-ui/layout';
 import React from 'react';
 
-function FlyoLink({ text }) {
+function FlyoLink({ text, w = '250px' }) {
     return (
         <Link
+            d='block'
             bgGradient='linear(to-r,cyan ,blue)'
-            w='250px'
+            w={w}
             textAlign='center'
             py='.75rem'
             fontSize='1rem'

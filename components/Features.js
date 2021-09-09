@@ -5,7 +5,12 @@ import FeatureCard from './FeatureCard';
 function Features() {
     return (
         <Box bg='darkBlueMainBg' py='1.5rem'>
-            <Container d='flex' flexDir='column'>
+            <Container
+                d='grid'
+                gridTemplateColumns={{ lg: 'repeat( 2, 1fr)' }}
+                gridGap={{ lg: '2.5rem' }}
+                maxW={{ base: 'container.baseStyle', lg: 'container.lg' }}
+            >
                 <FeatureCard
                     title='Access your files, anywhere'
                     text='The ability to use a smartphone, tablet, or computer to access your account means your 

@@ -7,7 +7,7 @@ function HeaderLink({ text }) {
             fontFamily='Open Sans'
             fontWeight='400'
             ml='1.25rem'
-            fontSize={{ base: '0.85rem' }}
+            fontSize={{ base: '0.85rem', lg: '1rem' }}
         >
             {text}
         </Link>

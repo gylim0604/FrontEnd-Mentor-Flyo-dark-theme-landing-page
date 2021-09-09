@@ -10,6 +10,7 @@ function TestimonyCard({ text, name, title, img }) {
             borderRadius='10px'
             p='2rem'
             mt='2rem'
+            w={{ lg: '390px' }}
         >
             <Text fontSize='.8rem' lineHeight='1.5rem'>
                 {text}

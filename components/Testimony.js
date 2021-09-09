@@ -7,17 +7,19 @@ function Testimony() {
         <Box bg='darkBlueMainBg' py='7.5rem'>
             <Container
                 d='flex'
-                flexDir='column'
+                flexDir={{ base: 'column', lg: 'row' }}
                 isolation='isolate'
                 position='relative'
+                maxW={{ base: 'container.baseStyle', lg: 'container.xl' }}
+                justifyContent={{ lg: 'space-between' }}
             >
                 <Img
                     src='/images/bg-quotes.png'
                     h='2rem'
                     w='auto'
                     position='absolute'
-                    left='7'
-                    top='1'
+                    left={{ base: '7', lg: '2' }}
+                    top={{ base: '1', lg: '2' }}
                     zIndex='-1'
                 />
                 <TestimonyCard

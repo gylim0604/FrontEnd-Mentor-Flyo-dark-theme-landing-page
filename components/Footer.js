@@ -4,10 +4,11 @@ import { Grid, UnorderedList, Text } from '@chakra-ui/react';
 import React from 'react';
 import FooterItem from './FooterItem';
 import FooterList from './FooterList';
+import { FacebookIcon, InstagramIcon, TwitterIcon } from './Icon';
 
 function Footer() {
     return (
-        <Box bg='darkBlueFooter' py='1rem'>
+        <Box bg='darkBlueFooter' py='1rem' pb={{ lg: '5rem' }}>
             <Container
                 maxW={{ base: 'container.baseStyle', lg: 'container.xl' }}
             >
@@ -50,10 +51,10 @@ function Footer() {
                         // title='Contact Us'
                         items={['Contact Us', 'Terms', 'Privacy']}
                     />
-                    <Flex justifyContent='center'>
-                        <Img src='images/icon-arrow.svg' />
-                        <Img src='images/icon-arrow.svg' />
-                        <Img src='images/icon-arrow.svg' />
+                    <Flex justifyContent='center' gap='1rem'>
+                        <FacebookIcon fill='white' hoverFill='cyan' />
+                        <InstagramIcon fill='white' hoverFill='cyan' />
+                        <TwitterIcon fill='white' hoverFill='cyan' />
                     </Flex>
                 </Box>
             </Container>

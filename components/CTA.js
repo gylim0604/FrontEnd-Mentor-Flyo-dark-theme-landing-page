@@ -46,6 +46,7 @@ function CTA() {
                         my={{ lg: '2rem' }}
                     >
                         <Input
+                            color='black'
                             w={{ base: '100%', lg: '200%' }}
                             bg='white'
                             p='2rem'

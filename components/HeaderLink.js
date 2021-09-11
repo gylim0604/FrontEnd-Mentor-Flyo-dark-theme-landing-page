@@ -8,6 +8,8 @@ function HeaderLink({ text }) {
             fontWeight='400'
             ml='1.25rem'
             fontSize={{ base: '0.85rem', lg: '1rem' }}
+            color={{ lg: 'whiteAlpha.700' }}
+            _hover={{ color: 'white', textDecor: 'underline' }}
         >
             {text}
         </Link>

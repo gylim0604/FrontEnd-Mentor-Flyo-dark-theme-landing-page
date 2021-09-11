@@ -1,5 +1,14 @@
-import { Container, Img, Box, Heading, Text, Link } from '@chakra-ui/react';
+import {
+    Container,
+    Img,
+    Box,
+    Heading,
+    Text,
+    LinkBox,
+    Icon,
+} from '@chakra-ui/react';
 import React from 'react';
+import { ArrowIcon, ArrowIconWhite } from './Icon';
 
 export default function LearnMore() {
     return (
@@ -37,17 +46,32 @@ export default function LearnMore() {
                         and colleagues for live collaboration. No email
                         attachments required.
                     </Text>
-                    <Link
+                    <LinkBox
+                        role='group'
                         borderBottom='1px solid cyan'
                         my='1rem'
                         color='cyan'
                         d='inline-flex'
                         alignItems='center'
                         pb='0.25rem'
+                        cursor='pointer'
+                        _hover={{
+                            color: 'whiteAlpha.700',
+                            borderBottom: '1px solid white',
+                        }}
                     >
-                        See how Fylo works
-                        <Img ml='0.75rem' src='/images/icon-arrow.svg' />
-                    </Link>
+                        <Text mr='0.75rem'>See how Fylo works</Text>
+                        <Box
+                            as='span'
+                            d='none'
+                            _groupHover={{ display: 'block' }}
+                        >
+                            <Icon as={ArrowIconWhite} />
+                        </Box>
+                        <Box as='span' _groupHover={{ display: 'none' }}>
+                            <Icon as={ArrowIcon} />
+                        </Box>
+                    </LinkBox>
                 </Box>
             </Container>
         </Box>

@@ -13,6 +13,7 @@ function FlyoLink({ text, w = '250px' }) {
             fontFamily='Open Sans'
             fontWeight='700'
             borderRadius='50px'
+            _hover={{ bg: 'cyan' }}
         >
             {text}
         </Link>

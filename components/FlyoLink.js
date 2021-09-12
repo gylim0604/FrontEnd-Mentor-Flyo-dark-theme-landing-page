@@ -14,6 +14,8 @@ function FlyoLink({ text, w = '250px' }) {
             fontWeight='700'
             borderRadius='50px'
             _hover={{ bg: 'cyan' }}
+            as='button'
+            type='submit'
         >
             {text}
         </Link>

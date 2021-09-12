@@ -8,7 +8,7 @@ import { FacebookIcon, InstagramIcon, TwitterIcon } from './Icon';
 
 function Footer() {
     return (
-        <Box bg='darkBlueFooter' py='1rem' pb={{ lg: '5rem' }}>
+        <Box bg='darkBlueFooter' py='1rem' pb={{ base: '2rem', lg: '5rem' }}>
             <Container
                 maxW={{ base: 'container.baseStyle', lg: 'container.xl' }}
             >
